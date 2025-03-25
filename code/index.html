@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask Input Example</title>
+</head>
+<body>
+    <h2>Enter something:</h2>
+    <form method="POST">
+        <input type="text" name="user_input" required>
+        <button type="submit">Submit</button>
+    </form>
+
+    {% if output %}
+        <h3>Output:</h3>
+        <p>{{ output }}</p>
+    {% endif %}
+</body>
+</html>
